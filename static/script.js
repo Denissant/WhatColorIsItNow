@@ -6,6 +6,7 @@ $(document).ready(function() {
 function clockUpdate() {
   var date = new Date();
   $('.digital-clock').css({'color': '#fff', 'text-shadow': '0 0 6px #ff0'});
+
   function addZero(x) {
     if (x < 10) {
       return x = '0' + x;
@@ -27,6 +28,9 @@ function clockUpdate() {
   var h = addZero(twelveHour(date.getHours()));
   var m = addZero(date.getMinutes());
   var s = addZero(date.getSeconds());
+  var a = '#' + String(h) + String(m) + String(s*4);
+
 
   $('.digital-clock').text(h + ':' + m + ':' + s)
+  $('.dynamicbg').css({'background-color': a});
 }

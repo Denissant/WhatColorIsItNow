@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>What Color Is It Now?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 </head>
-<body style="background-color: antiquewhite">
-    <h1 style="align-content: center; justify-content: center"> TIME HERE</h1>
+<body class="dynamicbg">
+
+    <div style="text-align: center">
+
+        <div id="idid1">texttext</div>
+
+        <div class="digital-clock">00:00:00</div>
+    </div>
+<script src="{{url_for('static', filename='jquery-3.6.0.min.js')}}"></script>
+<script src="{{url_for('static', filename='script.js')}}"></script>
+
+<script src="../static/jquery-3.6.0.min.js"></script>
 </body>
 </html>
+
