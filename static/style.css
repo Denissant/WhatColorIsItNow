@@ -1,35 +1,22 @@
-/*:root {*/
-/*    --clr: #102070*/
-/*}*/
+#digital-clock {
+    font-family: 'Raleway', sans-serif;
+    font-size: 150px;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    padding: 2rem 0;
+    font-feature-settings: 'lnum' 1;
+    position: absolute;
+    top: 210px;
+    left: 440px;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    color: white;
+    user-select: none;
+}
 
-/*html {*/
-/*    background-color: var(--clr);*/
-/*}*/
-
-/*@font-face {*/
-/*  font-family: 'DIGITAL';*/
-/*  src: url('https://cssdeck.com/uploads/resources/fonts/digii/DS-DIGII.TTF');*/
-/*}*/
-
-
-
-/*#idid1 {*/
-/*    font-size: 50px;*/
-/*    color: red;*/
-/*}*/
-
-/*.digital-clock {*/
-/*  margin: auto;*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  bottom: 0;*/
-/*  right: 0;*/
-/*  width: 200px;*/
-/*  height: 60px;*/
-/*  color: #ffffff;*/
-/*  border: 2px solid #999;*/
-/*  border-radius: 4px;*/
-/*  text-align: center;*/
-/*  font: 50px/60px 'DIGITAL', Helvetica;*/
-/*}*/
+.dynamictext {
+    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+}

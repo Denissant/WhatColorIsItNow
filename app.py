@@ -3,9 +3,6 @@ from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 
-lst = ('a', 'b', 'c', 'd')
-
-
 @app.route('/', methods=['GET'])
 def index():
     from datetime import datetime
@@ -13,7 +10,7 @@ def index():
     now = datetime.now()
 
     time = now.strftime("%H:%M:%S")
-    return render_template('index.html', time=time, lst=lst)
+    return render_template('index.html', time=time)
 
 
 if __name__ == '__main__':
