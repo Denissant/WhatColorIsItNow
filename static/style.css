@@ -1,22 +1,37 @@
-#digital-clock {
+.centerinfo {
     font-family: 'Raleway', sans-serif;
-    font-size: 150px;
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
     padding: 2rem 0;
     font-feature-settings: 'lnum' 1;
     position: absolute;
     top: 33%;
-    left: 29%;
+    left: 32%;
     bottom: 0;
     right: 0;
     height: 1px;
     color: white;
+}
+
+.cornerinfo {
+    font-family: 'Raleway', sans-serif;
+    font-feature-settings: 'lnum' 1;
+    position: absolute;
+    color: white;
+}
+
+#loadingtext {
+    font-size: 150px;
+    font-family: 'Raleway', sans-serif;
     user-select: none;
 }
 
-.dynamictext {
-    font-size: 45px;
-    font-family: 'Raleway', sans-serif;
+#mainclock {
+    font-size: 150px;
     user-select: none;
+}
+
+#hexinfo {
+    font-size: 30px;
+    font-weight: bolder;
 }
