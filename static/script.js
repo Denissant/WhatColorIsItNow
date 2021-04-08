@@ -127,7 +127,7 @@ function generateColor(h, m, s) {
   var blue = (blueS * 0.35) + (blueM * 0.65)
 
   // make colors darker based on the hour of the day and convert to HEX codes
-  red = convertHex(Math.floor(red - (red * 0.5 * (h/9))))
+  red = convertHex(Math.floor(red - (red * 0.5 * (h/8))))
   green = convertHex(Math.floor(green - (green * 0.5 * (h/7))))
   blue = convertHex(Math.floor(blue - (blue * 0.5 * (h/11))))
 
