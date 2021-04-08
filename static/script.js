@@ -123,13 +123,13 @@ function generateColor(h, m, s) {
 
   // generate numbers from 0 to 255 for each color, depending on h,m,s
   var red = (230 - redH + (redS * 0.01) + (redM * 0.01))
-  var green = (greenS * 0.65) + (greenM * 0.35)
-  var blue = (blueS * 0.35) + (blueM * 0.65)
+  var green = (greenS * 0.65) + ((greenM+(h/2)) * 0.35)
+  var blue = (blueS+(h/2) * 0.35) + (blueM * 0.65)
 
   // make colors darker based on the hour of the day and convert to HEX codes
-  red = convertHex(Math.floor(red - (red * 0.5 * (h/8))))
-  green = convertHex(Math.floor(green - (green * 0.5 * (h/7))))
-  blue = convertHex(Math.floor(blue - (blue * 0.5 * (h/11))))
+  red = convertHex(Math.floor(red - (red * 0.5 * (h/8.5))))
+  green = convertHex(Math.floor(green - (green * 0.5 * (h/6.5))))
+  blue = convertHex(Math.floor(blue - (blue * 0.5 * (h/7.3))))
 
   // returns a string, needs '#' in front
   return red + green + blue
